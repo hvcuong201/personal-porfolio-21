@@ -1,0 +1,48 @@
+.web {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+.web-option {
+  font-size: 20px;
+  margin-right: 18px;
+  font-weight: 500;
+}
+
+.web-option a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.web-option a::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  right: 0;
+  width: 0;
+  height: 1.5px;
+  background-color: black;
+  transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .web-option a:hover::before {
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+}
+
+.option-icon {
+  display: flex;
+  align-items: center;
+  margin-right: 6px;
+}
+
+.web-option:last-child {
+  margin-right: 0;
+}

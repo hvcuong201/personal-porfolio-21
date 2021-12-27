@@ -1,0 +1,25 @@
+.separator {
+  font-size: 4vh;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.45);
+  margin-top: 4vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.separator::before,
+.separator::after {
+  content: "";
+  display: block;
+  height: 0.09em;
+  min-width: 20vw;
+}
+
+.separator::before {
+  background: linear-gradient(to right, rgba(240, 240, 240, 0), #ff7600);
+  margin-right: 4vh;
+}
+
+.separator::after {
+  background: linear-gradient(to left, rgba(240, 240, 240, 0), #ff7600);
+  margin-left: 4vh;
+}

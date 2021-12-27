@@ -1,0 +1,16 @@
+.footer {
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.copyright {
+  color: gray;
+}
+
+.copyright a {
+  text-decoration: none;
+  color: rgb(148, 97, 1);
+}

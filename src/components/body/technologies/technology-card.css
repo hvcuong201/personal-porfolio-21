@@ -1,0 +1,40 @@
+.technology-card {
+  width: max-content;
+  padding: 8px 16px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 6px;
+}
+
+.technology-icon {
+  font-size: 80px;
+}
+
+.technology-name {
+  font-size: 18px;
+}
+
+@media only screen and (mad-width: 720px) {
+  .technology-card {
+    width: max-content;
+    height: 100px;
+  }
+
+  .technology-icon {
+    font-size: 60px;
+  }
+}
+
+@media only screen and (mad-width: 420px) {
+  .technology-card {
+    width: max-content;
+    height: 80px;
+  }
+
+  .technology-icon {
+    font-size: 40px;
+  }
+}

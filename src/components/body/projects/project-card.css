@@ -1,0 +1,140 @@
+.project-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 16px 0px;
+  padding: 8px 0px;
+}
+
+.project-about {
+  margin: 20px 0px;
+  line-height: 1.5;
+}
+
+.project-photo {
+  width: 100%;
+  flex: 1;
+  transition: all 5s ease;
+}
+
+.project-photo-container:hover .project-photo {
+  animation-name: autoscroll;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes autoscroll {
+  0% {
+    transform: translateY(0%);
+  }
+  40% {
+    transform: translateY(-60%);
+  }
+  100% {
+    transform: translateY(-0%);
+  }
+}
+
+.project-photo-container {
+  height: 35vh;
+  width: 45%;
+  overflow: hidden;
+  border-radius: 10px 10px 0px 0px;
+  border: 2px solid rgb(243, 242, 243);
+  margin: 20px 10px;
+}
+
+.container-browser-bar {
+  height: 20px;
+  background-color: rgb(243, 242, 243);
+  display: flex;
+  align-items: center;
+  position: sticky;
+  z-index: 69;
+}
+
+.container-browser-bar-circle {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  margin: 3px;
+  background-color: white;
+}
+
+.project-info {
+  margin-right: 24px;
+  flex: 1;
+}
+
+.project-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.project-tags {
+  display: flex;
+  max-width: 60%;
+  flex-wrap: wrap;
+}
+
+.tag {
+  padding: 4px 8px;
+  background-color: aquamarine;
+  border-radius: 4px;
+  margin-right: 6px;
+  margin-bottom: 4px;
+}
+
+.project-links {
+  margin-top: 6px;
+  display: flex;
+}
+
+.project-link {
+  text-decoration: none;
+  color: black;
+}
+
+.link-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  padding: auto;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-right: 6px;
+  background-color: aquamarine;
+  transition: all 0.5s ease;
+}
+
+.link-button:hover {
+  opacity: 0.7;
+  background-color: rgb(0, 250, 167);
+}
+
+.link-button i {
+  display: flex;
+  align-items: center;
+  margin-right: 4px;
+}
+
+@media only screen and (max-width: 720px) {
+  .project-photo-container {
+    width: 90%;
+  }
+
+  .project-card {
+    flex-direction: column-reverse;
+  }
+
+  .project-info {
+    margin-left: 0px;
+    margin-top: 12px;
+  }
+
+  .project-tags {
+    max-width: 100%;
+  }
+}

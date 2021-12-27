@@ -1,0 +1,60 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.contact-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 16px 0px;
+}
+
+.contact-up {
+  max-width: 100%;
+  font-size: 20px;
+  text-align: center;
+}
+
+.contact-phys {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 16px;
+}
+
+.contact-up i {
+  margin-right: 4px;
+  text-align: center;
+}
+
+.download-btn {
+  width: 200px;
+  background-color: aquamarine;
+  padding: 8px 16px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.download-btn a {
+  text-decoration: none;
+  color: black;
+}
+
+.download-btn:hover {
+  opacity: 0.7;
+  background-color: rgb(0, 250, 167);
+}
+
+@media only screen and (max-width: 720px) {
+  .contact-phys {
+    flex-direction: column;
+    align-items: center;
+  }
+}
