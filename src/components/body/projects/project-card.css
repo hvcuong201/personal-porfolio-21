@@ -139,6 +139,10 @@
 	}
 
 	.project-card {
+		flex-direction: column;
+	}
+
+	.project-body-container {
 		flex-direction: column-reverse;
 	}
 
