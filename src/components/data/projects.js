@@ -20,6 +20,6 @@ export const ProjectData = [
 		inprogress:
 			'https://docs.google.com/document/d/1G3RhG_5J1CC2L43nh8O4Vq5LRF8ZwQLO1SGcFwSYOoA/edit?usp=sharing',
 		github: 'https://github.com/hvcuong201/whentowork-automate-bot',
-		image: require('../../assets/project-img/project1.png')
+		image: require('../../assets/project-img/project2.png')
 	}
 ]
