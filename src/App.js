@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { Fragment } from 'react'
+import GoTop from './components/functions/GoTop'
 import Home from './components/home'
 
 function App() {
-  return (
-    <Home/>
-  )
+	return (
+		<Fragment>
+			<Home />
+			<GoTop />
+		</Fragment>
+	)
 }
 
 export default App
