@@ -1,80 +1,81 @@
 .header {
-  display: flex;
-  justify-content: space-between;
-  padding: 12px;
-  position: relative;
-  align-items: center;
+	display: flex;
+	justify-content: space-between;
+	padding: 12px;
+	position: relative;
+	align-items: center;
 }
 
 .menu {
-  display: flex;
-  flex: 1;
-  justify-content: flex-end;
+	display: flex;
+	flex: 1;
+	justify-content: flex-end;
 }
 
 .menu-icon {
-  font-size: 24px;
+	font-size: 24px;
 }
 
 .mobile-menu {
-  display: none;
+	display: none;
 }
 
 .web-menu {
-  display: flex;
+	display: flex;
 }
 
 .logo {
-  display: flex;
-  font-size: 36px;
-  color: darkcyan;
-  font-weight: 600;
+	display: flex;
+	font-size: 36px;
+	color: darkcyan;
+	font-weight: 600;
+	margin-right: 18px;
 }
 
 .short-text-logo {
-  display: none;
+	display: none;
 }
 
-@media only screen and (max-width: 810px) {
-  .full-text-logo {
-    display: none;
-  }
+@media only screen and (max-width: 1340px) {
+	.full-text-logo {
+		display: none;
+	}
 
-  .short-text-logo {
-    display: flex;
-  }
+	.short-text-logo {
+		display: flex;
+	}
 }
 
-@media only screen and (max-width: 720px) {
-  .body {
-    margin-top: 60px;
-  }
+@media only screen and (max-width: 760px) {
+	.body {
+		margin-top: 60px;
+	}
 
-  .header {
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    padding: 12px 24px;
-    position: relative;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 999;
-    transition: top 0.3s;
-  }
+	.header {
+		background-color: var(--background);
+		display: flex;
+		justify-content: space-between;
+		padding: 12px 24px;
+		position: relative;
+		align-items: center;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 999;
+		transition: top 0.3s;
+	}
 
-  .mobile-menu {
-    display: flex;
-    height: 48px;
-    width: 48px;
-  }
+	.mobile-menu {
+		display: flex;
+		height: 48px;
+		width: 48px;
+	}
 
-  .web-menu {
-    display: none;
-  }
-  .logo {
-    font-size: 48px;
-  }
+	.web-menu {
+		display: none;
+	}
+	.logo {
+		font-size: 48px;
+	}
 }

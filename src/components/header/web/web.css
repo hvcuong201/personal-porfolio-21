@@ -1,48 +1,55 @@
 .web {
-  display: flex;
-  flex: 1;
-  align-items: center;
+	display: flex;
+	flex: 1;
+	align-items: center;
 }
 
 .web-option {
-  font-size: 20px;
-  margin-right: 18px;
-  font-weight: 500;
+	font-size: 20px;
+	margin-right: 18px;
+	font-weight: 500;
 }
 
 .web-option a {
-  text-decoration: none;
-  color: black;
-  display: flex;
-  align-items: center;
-  position: relative;
+	text-decoration: none;
+	color: var(--text-primary);
+	display: flex;
+	align-items: center;
+	position: relative;
+	transition: all 0.5s;
 }
 
 .web-option a::before {
-  content: "";
-  position: absolute;
-  bottom: -2px;
-  right: 0;
-  width: 0;
-  height: 1.5px;
-  background-color: black;
-  transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+	content: '';
+	position: absolute;
+	bottom: -2px;
+	right: 0;
+	width: 0;
+	height: 1.5px;
+	background-color: var(--text-primary);
+	transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 @media (hover: hover) and (pointer: fine) {
-  .web-option a:hover::before {
-    left: 0;
-    right: auto;
-    width: 100%;
-  }
+	.web-option a:hover::before {
+		left: 0;
+		right: auto;
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	.web-option {
+		margin-right: 10px;
+	}
 }
 
 .option-icon {
-  display: flex;
-  align-items: center;
-  margin-right: 6px;
+	display: flex;
+	align-items: center;
+	margin-right: 6px;
 }
 
 .web-option:last-child {
-  margin-right: 0;
+	margin-right: 0;
 }

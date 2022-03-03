@@ -1,0 +1,85 @@
+:root {
+	--background: white;
+	--text-primary: black;
+	--text-secondary: royalblue;
+}
+[data-theme='dark'] {
+	--background: black;
+	--text-primary: white;
+	--text-secondary: grey;
+}
+
+body {
+	color: var(--text-primary);
+	background-color: var(--background);
+	font-size: large;
+	padding: 20px;
+	transition: all 0.5s;
+}
+
+p {
+	color: var(--text-primary);
+	background-color: var(--background);
+	transition: all 0.5s;
+}
+
+/* Custom Dark Mode Toggle Element */
+.toggle-theme-wrapper {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	gap: 2px;
+}
+
+.toggle-theme-wrapper span {
+	font-size: 20px;
+}
+
+.toggle-theme {
+	position: relative;
+	display: inline-block;
+	height: 24px;
+	width: 60px;
+}
+
+.toggle-theme input {
+	display: none;
+}
+
+.slider {
+	background-color: #ccc;
+	position: absolute;
+	cursor: pointer;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	top: 0;
+	transition: 0.2s;
+}
+
+.slider:before {
+	background-color: #fff;
+	top: 8%;
+	content: '';
+	height: 20px;
+	left: 2px;
+	position: absolute;
+	transition: 0.4s;
+	width: 20px;
+}
+
+input:checked + .slider:before {
+	transform: translateX(34px);
+}
+
+input:checked + .slider {
+	background-color: orange;
+}
+
+.slider.round {
+	border-radius: 20px;
+}
+
+.slider.round:before {
+	border-radius: 50%;
+}

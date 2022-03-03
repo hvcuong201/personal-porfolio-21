@@ -1,77 +1,95 @@
 .about {
-  padding: 48px;
+	padding: 48px;
 }
 
 .about-top {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
 }
 
 .about-img {
-  height: 600px;
+	height: 600px;
 }
 
 .about-info {
-  white-space: nowrap;
-  font-size: 36px;
-  line-height: 48px;
+	white-space: nowrap;
+	font-size: 36px;
+	line-height: 48px;
 }
 
 .info-name {
-  color: orange;
-  font-size: 48px;
-  font-weight: 1000;
+	color: orange;
+	font-size: 48px;
+	font-weight: 1000;
 }
 
 .scroller {
-  height: 1.2em;
-  line-height: 1.2em;
-  position: relative;
-  overflow: hidden;
+	height: 1.2em;
+	line-height: 1.2em;
+	position: relative;
+	overflow: hidden;
 }
 .scroller > div {
-  position: absolute;
-  top: 0;
-  animation: slide 5s infinite;
+	position: absolute;
+	top: 0;
+	animation: slide 5s infinite;
 }
 @keyframes slide {
-  0% {
-    top: 0;
-  }
-  25% {
-    top: -1.2em;
-  }
-  50% {
-    top: -2.4em;
-  }
-  75% {
-    top: -3.6em;
-  }
+	0% {
+		top: 0;
+	}
+	25% {
+		top: -1.2em;
+	}
+	50% {
+		top: -2.4em;
+	}
+	75% {
+		top: -3.6em;
+	}
+}
+
+@media only screen and (max-width: 1340px) {
+	.scroller {
+		height: 1.2em;
+	}
+
+	.about-img {
+		height: 480px;
+	}
+
+	.about-info {
+		font-size: 30px;
+	}
+
+	.info-name {
+		font-size: 40px;
+	}
 }
 
 @media only screen and (max-width: 1024px) {
-  .scroller {
-    height: 1.2em;
-  }
+	.scroller {
+		height: 1.2em;
+	}
 
-  .about-img {
-    height: 340px;
-  }
+	.about-img {
+		height: 340px;
+	}
 
-  .about-info {
-    font-size: 22px;
-  }
+	.about-info {
+		font-size: 22px;
+	}
 
-  .info-name {
-    font-size: 28px;
-  }
+	.info-name {
+		font-size: 28px;
+	}
 }
 
 @media only screen and (max-width: 720px) {
-  .about-top {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+	.about-top {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
 }

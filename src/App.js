@@ -4,10 +4,12 @@ import Home from './components/home'
 
 function App() {
 	return (
-		<Fragment>
-			<Home />
-			<GoTop />
-		</Fragment>
+		<div className='app'>
+			<Fragment>
+				<Home />
+				<GoTop />
+			</Fragment>
+		</div>
 	)
 }
 
