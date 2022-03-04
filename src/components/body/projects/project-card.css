@@ -134,9 +134,9 @@
 	margin-right: 4px;
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 1320px) {
 	.project-photo-container {
-		width: 90%;
+		width: 70%;
 	}
 
 	.project-card {
@@ -147,6 +147,17 @@
 		flex-direction: column-reverse;
 	}
 
+	.project-about {
+		font-size: medium;
+		font-weight: 400;
+	}
+}
+
+@media only screen and (max-width: 720px) {
+	.project-photo-container {
+		width: 90%;
+	}
+
 	.project-info {
 		margin-left: 0px;
 		margin-top: 12px;
@@ -154,5 +165,9 @@
 
 	.project-tags {
 		max-width: 100%;
+	}
+
+	.project-about {
+		font-size: large;
 	}
 }
