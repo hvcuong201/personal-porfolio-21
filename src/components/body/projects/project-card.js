@@ -45,11 +45,11 @@ function ProjectCard({ project }) {
 			</div>
 			<div className='project-body-container'>
 				<div className='project-info'>
-					<label className='project-title-smaller'>Idea:</label>
+					<label className='project-title-smaller'>💡 Idea:</label>
 					<div className='project-about'>
 						<p>{project.idea}</p>
 					</div>
-					<label className='project-title-smaller'>About:</label>
+					<label className='project-title-smaller'>💻 About:</label>
 					<div className='project-about'>
 						<p>{project.about}</p>
 					</div>

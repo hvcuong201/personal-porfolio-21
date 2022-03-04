@@ -22,7 +22,7 @@
 .web-option a::before {
 	content: '';
 	position: absolute;
-	bottom: -2px;
+	bottom: 15px;
 	right: 0;
 	width: 0;
 	height: 1.5px;

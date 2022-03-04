@@ -1,7 +1,7 @@
 :root {
 	--background: white;
 	--text-primary: black;
-	--text-secondary: royalblue;
+	--text-secondary: rgb(243, 242, 243);
 }
 [data-theme='dark'] {
 	--background: black;

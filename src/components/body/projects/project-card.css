@@ -47,13 +47,13 @@
 	width: 45%;
 	overflow: hidden;
 	border-radius: 10px 10px 0px 0px;
-	border: 2px solid rgb(243, 242, 243);
+	border: 2px solid var(--text-secondary);
 	margin: 20px 10px;
 }
 
 .container-browser-bar {
 	height: 20px;
-	background-color: rgb(243, 242, 243);
+	background-color: var(--text-secondary);
 	display: flex;
 	align-items: center;
 	position: sticky;
